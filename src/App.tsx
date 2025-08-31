@@ -48,7 +48,7 @@ export default function App() {
       position: { x: 5, y: 35, width: 17, height: 21 },
       description: '西方神兽白虎，主管西方，象征勇气与力量，掌管财富和权威。',
       significance: '增强财运，提升权威感，带来勇气面对挑战。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1674859875628-fc5f6a999453?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwdGlnZXIlMjB3aGl0ZSUyMGNhcnRvb258ZW58MXx8fHwxNzU2NjM1MDc5fDA&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/白虎.png',
       recommendedActivities: ['理财投资', '重要决策', '商务谈判', '财务规划', '存放贵重物品'],
       activityZone: '财富管理区'
     },
@@ -98,7 +98,7 @@ export default function App() {
       position: { x: 30, y: 45, width: 16, height: 20 },
       description: '也被称为灶君、东厨司命，是炉灶之神，负责监察家家户户的善恶，并在年底向天帝禀报。',
       significance: '保佑家庭和睦，饮食安全，监察家庭道德，带来吉祥平安。',
-      spiritImageUrl: '/images/zaoshen-placeholder.svg',
+      spiritImageUrl: '/images/灶君.png',
       recommendedActivities: ['烹饪做饭', '家庭聚餐', '备餐准备', '厨房整理', '食材存储'],
       activityZone: '烹饪饮食区'
     },
@@ -110,7 +110,7 @@ export default function App() {
       position: { x: 10, y: 25, width: 18, height: 24 },
       description: '是守护家门的神明，被具体化为威武的神明形象，保佑家宅平安，是中国流传广泛的信仰。',
       significance: '镇宅辟邪，守护门户，阻挡恶灵，保护家人出入平安。',
-      spiritImageUrl: '/images/menshen-placeholder.svg',
+      spiritImageUrl: '/images/门神.png',
       recommendedActivities: ['进出门户', '迎接客人', '出门前祈福', '换鞋整装', '门厅整理'],
       activityZone: '门户守护区'
     },
@@ -122,7 +122,7 @@ export default function App() {
       position: { x: 45, y: 55, width: 15, height: 18 },
       description: '又称地基主或房舍的保护神，是家宅的土地神，在家庭中占有重要地位。',
       significance: '守护房屋根基，保佑家宅稳固，家庭成员身体健康，居住安康。',
-      spiritImageUrl: '/images/zhongliushen-placeholder.svg',
+      spiritImageUrl: '/images/中霤神.png',
       recommendedActivities: ['家庭聚会', '房屋保养', '中央供奉', '地面清洁', '基础维护'],
       activityZone: '房屋中心区'
     },
@@ -134,7 +134,7 @@ export default function App() {
       position: { x: 35, y: 30, width: 17, height: 21 },
       description: '古代社会对祖先有明确的供奉规定，供奉祖先是维系家族血脉、祈求庇护的重要方式。',
       significance: '庇护后代，传承家族文化，带来智慧指引，保佑家族兴旺。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1703222422237-b056400ac9ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYW5jZXN0cmFsJTIwc2hyaW5lfGVufDF8fHx8MTc1NjYzNTYzM3ww&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/祖先神.png',
       recommendedActivities: ['祭祀祈祷', '家谱整理', '传统教育', '追思缅怀', '家族聚会'],
       activityZone: '祖先供奉区'
     },
@@ -146,7 +146,7 @@ export default function App() {
       position: { x: 20, y: 40, width: 14, height: 18 },
       description: '在古代先秦时期，人们会祭祀行神，以求旅途平安，其凭依物可以是菩、棘、柏或茅草等。',
       significance: '保佑出行平安，旅途顺利，远行无忧，平安归来。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/行神.png',
       recommendedActivities: ['出行准备', '行李整理', '路线规划', '祈求平安', '旅行收纳'],
       activityZone: '出行准备区'
     },
@@ -158,7 +158,7 @@ export default function App() {
       position: { x: 55, y: 35, width: 16, height: 19 },
       description: '管理粮仓的神明，守护粮食丰收，减少损失。',
       significance: '保佑五谷丰登，粮食充足，家庭温饱，财富积累。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1731142760611-2d35eabebdbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZ3JhaW4lMjBzdG9yYWdlJTIwZ29kfGVufDF8fHx8MTc1NjYzNTYzNnww&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/仓神.png',
       recommendedActivities: ['储藏食物', '库存管理', '物品整理', '粮食保管', '家用囤积'],
       activityZone: '储藏保管区'
     },
@@ -170,7 +170,7 @@ export default function App() {
       position: { x: 70, y: 50, width: 15, height: 18 },
       description: '守护水井的神灵，在部分地区至今仍有供奉的习俗。',
       significance: '保佑水源清洁，饮水安全，家庭健康，生活无忧。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1755511268111-9ebef96bc830?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwd2VsbCUyMHdhdGVyJTIwZGVpdHl8ZW58MXx8fHwxNzU2NjM1NjQwfDA&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/井神.png',
       recommendedActivities: ['取水用水', '水源管理', '清洁卫生', '洗漱准备', '水质保护'],
       activityZone: '水源管理区'
     },
@@ -182,7 +182,7 @@ export default function App() {
       position: { x: 65, y: 70, width: 13, height: 16 },
       description: '古代对厕所的保护神，因厕所被视为污秽之地，也需要有神明来镇守和净洁。',
       significance: '净洁污秽，驱除病气，保佑家庭卫生，身体健康。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/厕神.png',
       recommendedActivities: ['清洁消毒', '卫生管理', '空气净化', '除菌除臭', '健康维护'],
       activityZone: '卫生清洁区'
     }

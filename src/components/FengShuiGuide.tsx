@@ -74,7 +74,7 @@ export function FengShuiGuide() {
       significance: '带来全面的好运，家庭幸福，事业顺利，身体健康',
       placement: '客厅显眼位置，三神并列摆放',
       activities: ['全家聚会', '庆祝生日', '节日庆典', '祈福许愿', '家庭祷告'],
-      imageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/福禄寿.png'
     },
     // 家宅专门神明
     {
