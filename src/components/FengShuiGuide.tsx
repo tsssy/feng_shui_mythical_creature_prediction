@@ -29,7 +29,7 @@ export function FengShuiGuide() {
       significance: '增强财运，提升权威感，带来勇气和决断力',
       placement: '位于房间西方，适合财位、保险柜附近',
       activities: ['理财投资', '重要决策', '商务谈判', '财务规划', '存放贵重物品'],
-      imageUrl: 'https://images.unsplash.com/photo-1674859875628-fc5f6a999453?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwdGlnZXIlMjB3aGl0ZSUyMGNhcnRvb258ZW58MXx8fHwxNzU2NjM1MDc5fDA&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/白虎.png'
     },
     {
       name: '玄武',
@@ -65,7 +65,7 @@ export function FengShuiGuide() {
       significance: '镇宅辟邪，保护家庭安全，阻挡负能量',
       placement: '大门两侧或门框上方，成对出现效果更佳',
       activities: ['进出门户', '迎接客人', '出门前祈福', '换鞋整装', '门厅整理'],
-      imageUrl: '/images/menshen-placeholder.svg'
+      imageUrl: '/images/门神.png'
     },
     {
       name: '福禄寿',
@@ -84,7 +84,7 @@ export function FengShuiGuide() {
       significance: '保佑家庭和睦，饮食安全，监察家庭道德，带来吉祥平安',
       placement: '厨房灶台附近，保持清洁，定期供奉',
       activities: ['烹饪做饭', '家庭聚餐', '备餐准备', '厨房整理', '食材存储'],
-      imageUrl: '/images/zaoshen-placeholder.svg'
+      imageUrl: '/images/灶君.png'
     },
     {
       name: '中霤神',
@@ -93,7 +93,7 @@ export function FengShuiGuide() {
       significance: '守护房屋根基，保佑家宅稳固，家庭成员身体健康，居住安康',
       placement: '房屋中央位置，地面附近，避免高处悬挂',
       activities: ['家庭聚会', '房屋保养', '中央供奉', '地面清洁', '基础维护'],
-      imageUrl: '/images/zhongliushen-placeholder.svg'
+      imageUrl: '/images/中霤神.png'
     },
     {
       name: '祖先',
@@ -102,7 +102,7 @@ export function FengShuiGuide() {
       significance: '庇护后代，传承家族文化，带来智慧指引，保佑家族兴旺',
       placement: '客厅或专门的祖先堂，位置庄重，朝向吉方',
       activities: ['祭祀祈祷', '家谱整理', '传统教育', '追思缅怀', '家族聚会'],
-      imageUrl: 'https://images.unsplash.com/photo-1703222422237-b056400ac9ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYW5jZXN0cmFsJTIwc2hyaW5lfGVufDF8fHx8MTc1NjYzNTYzM3ww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/祖先神.png'
     },
     {
       name: '行神',
@@ -111,7 +111,7 @@ export function FengShuiGuide() {
       significance: '保佑出行平安，旅途顺利，远行无忧，平安归来',
       placement: '玄关或门口附近，方便出行前祈祷',
       activities: ['出行准备', '行李整理', '路线规划', '祈求平安', '旅行收纳'],
-      imageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/行神.png'
     },
     {
       name: '仓神',
@@ -120,7 +120,7 @@ export function FengShuiGuide() {
       significance: '保佑五谷丰登，粮食充足，家庭温饱，财富积累',
       placement: '储藏室、米缸或粮食存放处附近',
       activities: ['储藏食物', '库存管理', '物品整理', '粮食保管', '家用囤积'],
-      imageUrl: 'https://images.unsplash.com/photo-1731142760611-2d35eabebdbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZ3JhaW4lMjBzdG9yYWdlJTIwZ29kfGVufDF8fHx8MTc1NjYzNTYzNnww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/仓神.png'
     },
     {
       name: '井神',
@@ -129,7 +129,7 @@ export function FengShuiGuide() {
       significance: '保佑水源清洁，饮水安全，家庭健康，生活无忧',
       placement: '靠近水源处，如厨房、浴室或水龙头附近',
       activities: ['取水用水', '水源管理', '清洁卫生', '洗漱准备', '水质保护'],
-      imageUrl: 'https://images.unsplash.com/photo-1755511268111-9ebef96bc830?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwd2VsbCUyMHdhdGVyJTIwZGVpdHl8ZW58MXx8fHwxNzU2NjM1NjQwfDA&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/井神.png'
     },
     {
       name: '厕神',
@@ -138,7 +138,7 @@ export function FengShuiGuide() {
       significance: '净洁污秽，驱除病气，保佑家庭卫生，身体健康',
       placement: '卫生间外侧或附近，不直接面对厕所',
       activities: ['清洁消毒', '卫生管理', '空气净化', '除菌除臭', '健康维护'],
-      imageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/厕神.png'
     }
   ];
 
