@@ -65,7 +65,7 @@ export function FengShuiGuide() {
       significance: '镇宅辟邪，保护家庭安全，阻挡负能量',
       placement: '大门两侧或门框上方，成对出现效果更佳',
       activities: ['进出门户', '迎接客人', '出门前祈福', '换鞋整装', '门厅整理'],
-      imageUrl: 'figma:asset/16afb44d0678a957dfb0a0411980f86169a8ea0d.png'
+      imageUrl: '/images/menshen-placeholder.svg'
     },
     {
       name: '福禄寿',
@@ -84,7 +84,7 @@ export function FengShuiGuide() {
       significance: '保佑家庭和睦，饮食安全，监察家庭道德，带来吉祥平安',
       placement: '厨房灶台附近，保持清洁，定期供奉',
       activities: ['烹饪做饭', '家庭聚餐', '备餐准备', '厨房整理', '食材存储'],
-      imageUrl: 'figma:asset/1fbfa5bc405ba21ed94cc98794d936409953e489.png'
+      imageUrl: '/images/zaoshen-placeholder.svg'
     },
     {
       name: '中霤神',
@@ -93,7 +93,7 @@ export function FengShuiGuide() {
       significance: '守护房屋根基，保佑家宅稳固，家庭成员身体健康，居住安康',
       placement: '房屋中央位置，地面附近，避免高处悬挂',
       activities: ['家庭聚会', '房屋保养', '中央供奉', '地面清洁', '基础维护'],
-      imageUrl: 'figma:asset/8c750aac3254a435d1a3397d7d6b1cccf6621a11.png'
+      imageUrl: '/images/zhongliushen-placeholder.svg'
     },
     {
       name: '祖先',

@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2" rx="12"/>
+  
+  <!-- 祥云图案 -->
+  <circle cx="50" cy="40" r="8" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="150" cy="50" r="10" fill="#f59e0b" opacity="0.7"/>
+  <circle cx="100" cy="30" r="6" fill="#fbbf24" opacity="0.6"/>
+  
+  <!-- 神兽轮廓 -->
+  <circle cx="100" cy="100" r="40" fill="#ef4444" opacity="0.2" stroke="#dc2626" stroke-width="2"/>
+  
+  <!-- 简化的神兽特征 -->
+  <circle cx="85" cy="90" r="4" fill="#1f2937"/>
+  <circle cx="115" cy="90" r="4" fill="#1f2937"/>
+  <path d="M 100 110 Q 110 120 100 130 Q 90 120 100 110" fill="#dc2626"/>
+  
+  <!-- 装饰性文字 -->
+  <text x="100" y="160" text-anchor="middle" font-family="serif" font-size="16" fill="#374151">神兽</text>
+  <text x="100" y="180" text-anchor="middle" font-family="serif" font-size="12" fill="#6b7280">Mythical Beast</text>
+</svg>

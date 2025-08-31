@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="12"/>
+  
+  <!-- 门神威武形象 -->
+  <rect x="80" y="60" width="40" height="80" fill="#1e40af" opacity="0.8" rx="5"/>
+  
+  <!-- 头部 -->
+  <circle cx="100" cy="50" r="20" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="93" cy="45" r="2" fill="#1f2937"/>
+  <circle cx="107" cy="45" r="2" fill="#1f2937"/>
+  <path d="M 100 50 Q 105 55 100 60 Q 95 55 100 50" fill="#dc2626"/>
+  
+  <!-- 胡须 -->
+  <path d="M 85 55 Q 80 60 85 65" stroke="#1f2937" stroke-width="2" fill="none"/>
+  <path d="M 115 55 Q 120 60 115 65" stroke="#1f2937" stroke-width="2" fill="none"/>
+  
+  <!-- 武器 -->
+  <rect x="70" y="70" width="4" height="40" fill="#92400e"/>
+  <rect x="126" y="70" width="4" height="40" fill="#92400e"/>
+  
+  <!-- 文字 -->
+  <text x="100" y="170" text-anchor="middle" font-family="serif" font-size="14" fill="#1e40af">门神</text>
+</svg>

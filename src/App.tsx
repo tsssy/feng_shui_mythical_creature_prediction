@@ -98,7 +98,7 @@ export default function App() {
       position: { x: 30, y: 45, width: 16, height: 20 },
       description: '也被称为灶君、东厨司命，是炉灶之神，负责监察家家户户的善恶，并在年底向天帝禀报。',
       significance: '保佑家庭和睦，饮食安全，监察家庭道德，带来吉祥平安。',
-      spiritImageUrl: 'figma:asset/1fbfa5bc405ba21ed94cc98794d936409953e489.png',
+      spiritImageUrl: '/images/zaoshen-placeholder.svg',
       recommendedActivities: ['烹饪做饭', '家庭聚餐', '备餐准备', '厨房整理', '食材存储'],
       activityZone: '烹饪饮食区'
     },
@@ -110,7 +110,7 @@ export default function App() {
       position: { x: 10, y: 25, width: 18, height: 24 },
       description: '是守护家门的神明，被具体化为威武的神明形象，保佑家宅平安，是中国流传广泛的信仰。',
       significance: '镇宅辟邪，守护门户，阻挡恶灵，保护家人出入平安。',
-      spiritImageUrl: 'figma:asset/16afb44d0678a957dfb0a0411980f86169a8ea0d.png',
+      spiritImageUrl: '/images/menshen-placeholder.svg',
       recommendedActivities: ['进出门户', '迎接客人', '出门前祈福', '换鞋整装', '门厅整理'],
       activityZone: '门户守护区'
     },
@@ -122,7 +122,7 @@ export default function App() {
       position: { x: 45, y: 55, width: 15, height: 18 },
       description: '又称地基主或房舍的保护神，是家宅的土地神，在家庭中占有重要地位。',
       significance: '守护房屋根基，保佑家宅稳固，家庭成员身体健康，居住安康。',
-      spiritImageUrl: 'figma:asset/8c750aac3254a435d1a3397d7d6b1cccf6621a11.png',
+      spiritImageUrl: '/images/zhongliushen-placeholder.svg',
       recommendedActivities: ['家庭聚会', '房屋保养', '中央供奉', '地面清洁', '基础维护'],
       activityZone: '房屋中心区'
     },
