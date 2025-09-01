@@ -11,7 +11,7 @@ export function FengShuiGuide() {
       significance: '提升事业运势，增强学习能力，带来新的机会',
       placement: '位于房间东方，适合书房、办公区域',
       activities: ['学习工作', '制定计划', '阅读写作', '思考决策', '创意设计'],
-      imageUrl: 'https://images.unsplash.com/photo-1751201593592-04dcae9b4f91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwY2FydG9vbiUyMGRyYWdvbiUyMGNoaW5lc2V8ZW58MXx8fHwxNzU2NjM1MDcyfDA&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/青龙 (1).png' // 更新为本地青龙图片
     },
     {
       name: '朱雀',
@@ -20,7 +20,7 @@ export function FengShuiGuide() {
       significance: '提升人际运势，增强个人魅力和声誉',
       placement: '位于房间南方，适合客厅、会客区域',
       activities: ['社交聚会', '接待客人', '演讲展示', '艺术表演', '庆祝活动'],
-      imageUrl: 'https://images.unsplash.com/photo-1579541982208-f050c2503aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwcGhvZW5peCUyMGJpcmQlMjBjYXJ0b29ufGVufDF8fHx8MTc1NjYzNTA3NXww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/朱雀.png' // 更新为本地朱雀图片
     },
     {
       name: '白虎',
@@ -38,7 +38,7 @@ export function FengShuiGuide() {
       significance: '保佑身体健康，增进家庭和谐，带来稳定运势',
       placement: '位于房间北方，适合卧室、休息区域',
       activities: ['休息睡眠', '冥想打坐', '养生保健', '家庭团聚', '静心思考'],
-      imageUrl: 'https://images.unsplash.com/photo-1562657553-f6aea958c170?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwdHVydGxlJTIwYmxhY2slMjBjYXJ0b29ufGVufDF8fHx8MTc1NjYzNTA4Mnww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/玄武.jpg' // 更新为本地玄武图片
     },
     {
       name: '财神爷',
@@ -47,7 +47,7 @@ export function FengShuiGuide() {
       significance: '招财进宝，生意兴隆，投资有成，财源广进',
       placement: '面向大门或窗户，背靠实墙，远离厕所厨房',
       activities: ['收纳财物', '记账理财', '商务洽谈', '投资计划', '祈财祈福'],
-      imageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/财神.png' // 更新为本地财神图片
     },
     {
       name: '土地神',
@@ -56,7 +56,7 @@ export function FengShuiGuide() {
       significance: '镇宅保平安，驱除邪气，保佑家人健康顺遂',
       placement: '靠近地面，角落位置，保持清洁整齐',
       activities: ['家庭祭拜', '清洁整理', '祈求平安', '维护房屋', '邻里和睦'],
-      imageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200'
+      imageUrl: '/images/土地神.jpg' // 更新为本地土地神图片
     },
     {
       name: '门神',
@@ -65,7 +65,7 @@ export function FengShuiGuide() {
       significance: '镇宅辟邪，保护家庭安全，阻挡负能量',
       placement: '大门两侧或门框上方，成对出现效果更佳',
       activities: ['进出门户', '迎接客人', '出门前祈福', '换鞋整装', '门厅整理'],
-      imageUrl: '/images/门神.png'
+      imageUrl: '/images/门神.png' // 更新为本地门神图片
     },
     {
       name: '福禄寿',
@@ -168,7 +168,8 @@ export function FengShuiGuide() {
                 <ImageWithFallback
                   src={entity.imageUrl}
                   alt={entity.name}
-                  className="w-20 h-20 object-cover rounded-lg border"
+                  className="w-28 object-contain rounded-lg border" // 移除固定高度，使用object-contain保持原始比例
+                  style={{ width: '112px' }} // 只设置宽度，高度自动调整
                 />
               </div>
               

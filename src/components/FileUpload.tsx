@@ -30,20 +30,48 @@ export function FileUpload({ onFileSelect, onAnalyze, isAnalyzing }: FileUploadP
 
   const startRecording = async () => {
     try {
+      console.log('开始请求摄像头权限...');
       const stream = await navigator.mediaDevices.getUserMedia({ 
-        video: { facingMode: 'environment' }, 
+        video: { 
+          facingMode: 'environment',
+          width: { ideal: 1280 },
+          height: { ideal: 720 }
+        }, 
         audio: false 
       });
+      
+      console.log('摄像头权限获取成功:', stream);
       setMediaStream(stream);
       setIsRecording(true);
       
-      if (videoRef.current) {
-        videoRef.current.srcObject = stream;
-        videoRef.current.play();
-      }
+      // 等待一小段时间确保视频元素准备就绪
+      setTimeout(() => {
+        if (videoRef.current) {
+          console.log('设置视频源:', stream);
+          videoRef.current.srcObject = stream;
+          videoRef.current.play().then(() => {
+            console.log('视频开始播放');
+          }).catch((error) => {
+            console.error('视频播放失败:', error);
+          });
+        } else {
+          console.error('视频元素引用不存在');
+        }
+      }, 100);
+      
     } catch (error) {
       console.error('无法访问摄像头:', error);
-      alert('无法访问摄像头，请检查权限设置');
+      if (error instanceof Error) {
+        if (error.name === 'NotAllowedError') {
+          alert('摄像头权限被拒绝，请在浏览器设置中允许摄像头访问');
+        } else if (error.name === 'NotFoundError') {
+          alert('未找到摄像头设备，请检查设备连接');
+        } else {
+          alert(`摄像头访问失败: ${error.message}`);
+        }
+      } else {
+        alert('摄像头访问失败，请检查权限设置');
+      }
     }
   };
 
@@ -59,25 +87,39 @@ export function FileUpload({ onFileSelect, onAnalyze, isAnalyzing }: FileUploadP
   };
 
   const capturePhoto = () => {
-    if (videoRef.current) {
+    if (videoRef.current && mediaStream) {
+      console.log('开始拍照...');
       const canvas = document.createElement('canvas');
       canvas.width = videoRef.current.videoWidth;
       canvas.height = videoRef.current.videoHeight;
       const ctx = canvas.getContext('2d');
       
       if (ctx) {
+        console.log('绘制视频帧到画布:', canvas.width, 'x', canvas.height);
         ctx.drawImage(videoRef.current, 0, 0);
+        
         canvas.toBlob((blob) => {
           if (blob) {
-            const file = new File([blob], 'captured-photo.jpg', { type: 'image/jpeg' });
+            console.log('照片生成成功，大小:', blob.size, 'bytes');
+            const file = new File([blob], `captured-photo-${Date.now()}.jpg`, { type: 'image/jpeg' });
             setSelectedFile(file);
             const url = URL.createObjectURL(file);
             setPreviewUrl(url);
             onFileSelect(file, 'image');
             stopRecording();
+            console.log('照片已保存并选择');
+          } else {
+            console.error('照片生成失败');
+            alert('照片生成失败，请重试');
           }
-        }, 'image/jpeg');
+        }, 'image/jpeg', 0.9);
+      } else {
+        console.error('无法获取画布上下文');
+        alert('拍照失败，请重试');
       }
+    } else {
+      console.error('视频元素或媒体流不可用');
+      alert('摄像头未准备就绪，请重试');
     }
   };
 
@@ -146,13 +188,19 @@ export function FileUpload({ onFileSelect, onAnalyze, isAnalyzing }: FileUploadP
 
         {isRecording && (
           <div className="space-y-4">
-            <video
-              ref={videoRef}
-              className="w-full max-w-md mx-auto rounded-lg border"
-              autoPlay
-              muted
-              playsInline
-            />
+            <div className="relative w-full max-w-md mx-auto">
+              <video
+                ref={videoRef}
+                className="w-full h-auto rounded-lg border shadow-lg"
+                autoPlay
+                muted
+                playsInline
+                style={{ display: 'block' }} // 确保视频元素显示
+              />
+              <div className="absolute top-2 left-2 bg-black/50 text-white px-2 py-1 rounded text-sm">
+                摄像头预览
+              </div>
+            </div>
             <div className="flex gap-2 justify-center">
               <Button onClick={capturePhoto} className="bg-red-600 hover:bg-red-700">
                 拍照
@@ -161,6 +209,9 @@ export function FileUpload({ onFileSelect, onAnalyze, isAnalyzing }: FileUploadP
                 取消
               </Button>
             </div>
+            <p className="text-sm text-muted-foreground text-center">
+              请确保摄像头权限已开启，预览正常后点击拍照
+            </p>
           </div>
         )}
 

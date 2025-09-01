@@ -24,7 +24,7 @@ export default function App() {
       position: { x: 75, y: 20, width: 18, height: 22 },
       description: '东方神兽青龙，主管东方，象征生机与活力，掌管事业和学业运势。',
       significance: '提升事业运，增强学习能力，带来新的机会和突破。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1751201593592-04dcae9b4f91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwY2FydG9vbiUyMGRyYWdvbiUyMGNoaW5lc2V8ZW58MXx8fHwxNzU2NjM1MDcyfDA&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/青龙 (1).png', // 更新为本地青龙图片
       recommendedActivities: ['学习工作', '制定计划', '阅读写作', '思考决策', '创意设计'],
       activityZone: '学习工作区'
     },
@@ -36,7 +36,7 @@ export default function App() {
       position: { x: 50, y: 5, width: 16, height: 20 },
       description: '南方神兽朱雀，主管南方，象征光明与希望，掌管名声和人际关系。',
       significance: '提升人际运势，增强个人魅力，带来声誉和社交机会。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1579541982208-f050c2503aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwcGhvZW5peCUyMGJpcmQlMjBjYXJ0b29ufGVufDF8fHx8MTc1NjYzNTA3NXww&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/朱雀.png', // 更新为本地朱雀图片
       recommendedActivities: ['社交聚会', '接待客人', '演讲展示', '艺术表演', '庆祝活动'],
       activityZone: '社交会客区'
     },
@@ -60,7 +60,7 @@ export default function App() {
       position: { x: 40, y: 75, width: 20, height: 18 },
       description: '北方神兽玄武，主管北方，象征稳定与长寿，掌管健康和家庭和睦。',
       significance: '保佑身体健康，增进家庭和谐，带来稳定的基础运势。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1562657553-f6aea958c170?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwdHVydGxlJTIwYmxhY2slMjBjYXJ0b29ufGVufDF8fHx8MTc1NjYzNTA4Mnww&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/玄武.jpg', // 更新为本地玄武图片
       recommendedActivities: ['休息睡眠', '冥想打坐', '养生保健', '家庭团聚', '静心思考'],
       activityZone: '健康休息区'
     },
@@ -73,7 +73,7 @@ export default function App() {
       position: { x: 25, y: 50, width: 15, height: 19 },
       description: '掌管财富的神祇，为家庭和事业带来财运和商机。',
       significance: '招财进宝，生意兴隆，投资有成，财源广进。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXRlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/财神.png', // 更新为本地财神图片
       recommendedActivities: ['收纳财物', '记账理财', '商务洽谈', '投资计划', '祈财祈福'],
       activityZone: '财运聚集区'
     },
@@ -85,7 +85,7 @@ export default function App() {
       position: { x: 60, y: 60, width: 14, height: 17 },
       description: '守护家宅的地方神祇，保佑一方土地平安，居住安康。',
       significance: '镇宅保平安，驱除邪气，保佑家人健康顺遂。',
-      spiritImageUrl: 'https://images.unsplash.com/photo-1736688600613-c7168b2d5ac7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXJlJTIwZ29kJTIwb2YlMjB3ZWFsdGglMjBjaGluZXNlfGVufDF8fHx8MTc1NjYzNTA4N3ww&ixlib=rb-4.1.0&q=80&w=200',
+      spiritImageUrl: '/images/土地神.jpg', // 更新为本地土地神图片
       recommendedActivities: ['家庭祭拜', '清洁整理', '祈求平安', '维护房屋', '邻里和睦'],
       activityZone: '家宅守护区'
     },
@@ -206,10 +206,17 @@ export default function App() {
     // 模拟风水分析过程
     await new Promise(resolve => setTimeout(resolve, 3000));
     
-    // 根据房间特征随机选择一位最适合的神明
-    // 实际应用中这里会基于图像分析和风水理论进行预测
-    const shuffledSpirits = [...fengShuiSpirits].sort(() => Math.random() - 0.5);
-    const selectedSpirit = shuffledSpirits[0]; // 只选择一位神明
+    // 更好的随机选择算法 - 使用真正的随机索引
+    const randomIndex = Math.floor(Math.random() * fengShuiSpirits.length);
+    const selectedSpirit = fengShuiSpirits[randomIndex];
+    
+    // 调试信息 - 在控制台显示选择的神明
+    console.log('🔮 风水预测结果:', {
+      选中的神明: selectedSpirit.name,
+      神明类型: selectedSpirit.category,
+      随机索引: randomIndex,
+      总数量: fengShuiSpirits.length
+    });
     
     // 根据房间布局调整神明位置（这里使用随机位置模拟）
     const adjustedResult = [{
